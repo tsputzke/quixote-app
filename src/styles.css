@@ -78,34 +78,6 @@ body, html {
   left: 0;
 }
 
-
-
-.videoWrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center
-}
-
-.cover {
-  position: absolute;
-  height: calc((680px - (400px * (9 / 16))) / 2);
-  width: 100%;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 20px;
-  text-align: center;
-}
-
-header {
-  top: 0;
-}
-
-footer {
-  bottom: 0;
+.ytp-title {
+  display: none !important;
 }
