@@ -27,7 +27,7 @@ class Child extends React.Component {
   }
 
   componentDidMount() {
-    fetch('https://www.googleapis.com/youtube/v3/videos?key=AIzaSyCWda4ZE_Wtnp4jvf_TDiFk_KCE1auCmco&id=71h8MZshGSs&part=snippet', {
+    fetch(`https://www.googleapis.com/youtube/v3/videos?key=${process.env.REACT_APP_YOUTUBE_API_KEY}&part=snippet`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
