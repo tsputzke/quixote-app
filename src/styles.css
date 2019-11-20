@@ -45,7 +45,9 @@
 
 /* General styles (General Module) */
 
-body {}
+body {
+  font-size: 20px;
+}
 
 
 /* Header styles (Main Module) */
@@ -53,6 +55,32 @@ body {}
 
 /* Content styles (Main Module) */
 
+/* Landing */
+
+main {
+  width: 85%;
+  margin: auto;
+}
+
+#title {
+  margin-top: 5vh;
+  text-align: center;
+}
+
+#hero {
+  margin: 5%;
+}
+
+#demo {
+  width: 250px;
+  height: 200px;
+  margin: 5% auto;
+  background-color: lightblue;
+}
+
+#signin-form {
+  
+}
 
 /* Footer styles (Main Module) */
 
@@ -64,7 +92,7 @@ body {}
 
 /* CHILD */
 
-body {
+/* body {
   font-family: "Open Sans",
   sans-serif;
   font-size: 20px;
@@ -137,4 +165,4 @@ body, html {
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
