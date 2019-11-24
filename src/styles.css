@@ -47,8 +47,17 @@
 
 body {
   font-size: 20px;
+  letter-spacing: .03em;
 }
 
+button {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+h1 {
+  font-size: 2em;
+}
 
 /* Header styles (Main Module) */
 
@@ -57,29 +66,48 @@ body {
 
 /* Landing */
 
-main {
+#landing {
   width: 85%;
   margin: auto;
 }
 
 #title {
-  margin-top: 5vh;
+  margin-top: 12%;
   text-align: center;
 }
 
 #hero {
-  margin: 5%;
+  margin: 15px auto;
+}
+
+#hero h3 {
+  width: 300px;
+  margin: 5% auto;
 }
 
 #demo {
-  width: 250px;
-  height: 200px;
-  margin: 5% auto;
-  background-color: lightblue;
+  margin: 15px auto;
 }
 
-#signin-form {
-  
+#demo p {
+  text-align: center;
+  font-size: .8em;
+}
+
+#login {
+  text-align: center;
+  margin: auto;
+}
+
+#login-form {
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+  margin: auto;
+}
+
+#login-form input {
+  width: 50%;
 }
 
 /* Footer styles (Main Module) */
