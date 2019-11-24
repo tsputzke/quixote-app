@@ -59,6 +59,14 @@ h1 {
   font-size: 2em;
 }
 
+.link-span {
+  color: red;
+}
+
+.link-span:hover {
+  cursor: pointer;
+}
+
 /* Header styles (Main Module) */
 
 
@@ -107,6 +115,24 @@ h1 {
 }
 
 #login-form input {
+  width: 50%;
+}
+
+/* Register */
+
+#register {
+  text-align: center;
+  margin: 20vh auto 0;
+}
+
+#register-form {
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+  margin: auto;
+}
+
+#register-form input {
   width: 50%;
 }
 
