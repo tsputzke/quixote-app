@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './styles.css';
 import Context from './Context';
+import User from './User';
 
 import Landing from "./Landing"
 import Child from "./Child"
@@ -26,7 +27,8 @@ class App extends Component {
     return (
       <Context.Provider value={value}>
         <div id='app'>
-          <Landing/>
+          <User/>
+          {/* <Landing/> */}
           {/* <Child/> */}
         </div>
       </Context.Provider>

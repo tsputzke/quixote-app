@@ -50,13 +50,18 @@ body {
   letter-spacing: .03em;
 }
 
+main {
+  width: 85%;
+  margin: auto;
+}
+
 button {
   border: 1px solid black;
   padding: 5px;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .link-span {
@@ -73,11 +78,6 @@ h1 {
 /* Content styles (Main Module) */
 
 /* Landing */
-
-#landing {
-  width: 85%;
-  margin: auto;
-}
 
 #title {
   margin-top: 12%;
@@ -134,6 +134,17 @@ h1 {
 
 #register-form input {
   width: 50%;
+}
+
+/* User */
+
+#user {
+  margin-top: 10vh;
+}
+
+#watch-now-button {
+  display: block;
+  margin: 15px auto;
 }
 
 /* Footer styles (Main Module) */
