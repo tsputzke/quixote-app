@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import Context from './Context';
+import { Link } from 'react-router-dom';
 
 class Register extends Component {
-  static contextType = Context
-
   render() {
     return (
       <section id='register'>
@@ -23,7 +21,7 @@ class Register extends Component {
               <input type="password"name='confirm-password'id='singup-confirm-password' />
             </div>
             <button type='submit'>Sign Up</button>
-            <p><span className='link-span' onClick={this.context.toggleRegistration}>Already a user?</span></p>
+            <p><Link to='/'><span className='link-span'>Already a user?</span></Link></p>
           </fieldset>
         </form>
       </section> 
