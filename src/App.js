@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom'
 import './styles.css';
 import Context from './Context';
 import User from './User';
@@ -26,11 +27,13 @@ class App extends Component {
 
     return (
       <Context.Provider value={value}>
-        <div id='app'>
-          <User/>
-          {/* <Landing/> */}
-          {/* <Child/> */}
-        </div>
+        <main id='app'>
+          <Switch>
+            <User/>
+            {/* <Landing/> */}
+            {/* <Child/> */}
+          </Switch>
+        </main>
       </Context.Provider>
     )
   }

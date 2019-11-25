@@ -15,8 +15,6 @@ class User extends Component {
     const title = e.target.video_title.value;
     const number = (e.target.search_number.value) ?  e.target.search_number.value : 10;
 
-    // Add a loading indicator
-
     fetch(`https://www.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_YOUTUBE_API_KEY}&part=snippet&maxResults=${number}&q=${title}`, {
       method: 'GET',
       headers: {
@@ -36,7 +34,7 @@ class User extends Component {
   }
   render() {
 
-    const videoList = this.state.videos.map((video, i) => {
+    const searchedVideoList = this.state.videos.map((video, i) => {
       return (
         <li key={i}>
           <img 
@@ -69,7 +67,7 @@ class User extends Component {
             </fieldset>
           </form>
           <section id='search-results'>
-            <ul>{videoList}</ul>
+            <ul>{searchedVideoList}</ul>
           </section>
         </section>
         <section id='view-videos'>
