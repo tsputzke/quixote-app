@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import YouTube from 'react-youtube';
 
 class User extends Component {
   constructor(props) {
-    super();
+    super(props);
 
     this.state = {
       videos: []
@@ -36,27 +35,17 @@ class User extends Component {
       });
   }
   render() {
-    // const opts = {
-    //   height: '100%',
-    //   width: '100%',
-    //   playerVars: { // https://developers.google.com/youtube/player_parameters
-    //     autoplay: 0,
-    //     controls: 0,
-    //     disablekb: 1,
-    //     fs: 0,
-    //     rel: 0,
-    //     modestbranding: 1,
-    //   }
-    // }
 
     const videoList = this.state.videos.map((video, i) => {
       return (
         <li key={i}>
+          <img 
+            src={video.snippet.thumbnails.medium.url} 
+            alt='youtube video thumbnail'
+            onClick={e => window.open(`https://www.youtube.com/watch?v=${video.id.videoId}`, '_blank')}
+          />
+          <p id='video-title'>{video.snippet.title}</p>
           <button>Add</button>
-            <YouTube
-              videoId={video.id.videoId}
-              // opts={opts}
-            />
         </li>
       )
     })

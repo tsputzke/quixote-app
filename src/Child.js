@@ -5,7 +5,7 @@ import Fullscreen from "react-full-screen";
 
 class Child extends React.Component {
   constructor(props) {
-    super();
+    super(props);
     
     this._handleDoubleClickItem = this._handleDoubleClickItem.bind(this);
 
