@@ -76,6 +76,10 @@ ul {
   list-style: none;
 }
 
+th, td {
+  text-align: center;
+}
+
 /* Header styles (Main Module) */
 
 
@@ -149,6 +153,13 @@ ul {
 #watch-now-button {
   display: block;
   margin: 15px auto;
+}
+
+/* View */
+
+table, 
+tr {
+  border: 1px solid black;
 }
 
 /* Footer styles (Main Module) */

@@ -4,7 +4,7 @@ import './styles.css';
 import Context from './Context';
 import User from './User';
 import Register from './Register'
-
+import View from './View';
 import Landing from "./Landing"
 import Child from "./Child"
 
@@ -25,26 +25,28 @@ class App extends Component {
 
     return (
       <Context.Provider value={value}>
-        <main id='app'>
-          <Switch>
-            <Landing
-              exact
-              path={'/'}
-            />
-            <Register
-              exact
-              path={'/register'}
-            />
-            <User
-              exact
-              path={'/user'}
-            />
-            <Child
-              exact
-              path={'/child'}
-            />
-          </Switch>
-        </main>
+        <Switch>
+          <Landing
+            exact
+            path={'/'}
+          />
+          <Register
+            exact
+            path={'/register'}
+          />
+          <User
+            exact
+            path={'/user'}
+          />
+          <Child
+            exact
+            path={'/child'}
+          />
+          <View
+            exact
+            path={'/view'}
+          />
+        </Switch>
       </Context.Provider>
     )
   }
