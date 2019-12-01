@@ -1,24 +1,15 @@
 import React from 'react';
-import Iframe from 'react-iframe';
 import YouTube from 'react-youtube';
 import Fullscreen from "react-full-screen";
 
 class Child extends React.Component {
   constructor(props) {
     super(props);
-    
-    this._handleDoubleClickItem = this._handleDoubleClickItem.bind(this);
 
     this.state = {
       isFull: false,
       video: ''
     };
-  }
-
-  //toggle autoplay on based on state, which is changed by a click event for the youtube thumbnail wrapper.
-  
-  _handleDoubleClickItem(event): void {
-  	alert('I got double-clicked!');
   }
 
   toggleScreen = () => {
@@ -59,37 +50,25 @@ class Child extends React.Component {
       }
     }
     return (
-      <div className="App">
-        <button id='quit'>X</button>
+      <main role='main' id='child'>
+        <button id='exit-child-view'><i class="fas fa-chevron-circle-left"></i></button>
         <section className='videos-display'>
             <ul className='videos-placeholder'>
               <li>
                 <div>
-                <Fullscreen
-                  enabled={this.state.isFull}
-                  // onChange={isFull => this.setState({isFull})}
-                >
-                  <YouTube
-                    // videoId="71h8MZshGSs"
-                    videoId="zOWJqNPeifU"
-                    opts={opts}
-                    // onReady={this._onReady}
-                    onPlay={this.toggleScreen}
-                    onPause={this.toggleScreen}
-                    onEnd={this.toggleScreen}
-                    // onError={}
-                  />
+                  <Fullscreen enabled={this.state.isFull}>
+                    <YouTube
+                      videoId="71h8MZshGSs"
+                      opts={opts}
+                      onPlay={this.toggleScreen}
+                      onPause={this.toggleScreen}
+                      onEnd={this.toggleScreen}
+                      // onError={}
+                    />
                   </Fullscreen>
                 </div>
               </li>
-              <li onClick={
-                <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
-                  allowFullScreen
-                  position="absolute"
-                  width="100%"
-                  height="100%"
-                />
-              }>
+              <li>
                 <img src={this.state.video} alt="youtube thumbnail"></img>
               </li>
               <li></li>
@@ -99,14 +78,9 @@ class Child extends React.Component {
             </ul>
         </section>
         <button id='refresh'>[refresh icon]</button>
-      </div>
+      </main>
     );
   }
-
-  // _onReady(event) {
-  //   // access to player in all event handlers via event.target
-  //   event.target.pauseVideo();
-  // }
 }
 
 export default Child;

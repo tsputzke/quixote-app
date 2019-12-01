@@ -36,17 +36,17 @@ class View extends Component {
             <tr>
               <td><a href='https://placeholder.com'><img src='https://via.placeholder.com/100' alt='placeholder'/></a></td>
               <td>ABC Song + More Nursery Rhymes & Kids Songs - CoCoMelon</td>
-              <td>X</td>
+              <td><i className="far fa-trash-alt"></i></td>
             </tr>
             <tr>
               <td><a href='https://placeholder.com'><img src='https://via.placeholder.com/100' alt='placeholder'/></a></td>
               <td>ABC Song + More Nursery Rhymes & Kids Songs - CoCoMelon</td>
-              <td>X</td>
+              <td><i className="far fa-trash-alt"></i></td>
             </tr>
             <tr>
               <td><a href='https://placeholder.com'><img src='https://via.placeholder.com/100' alt='placeholder'/></a></td>
               <td>ABC Song + More Nursery Rhymes & Kids Songs - CoCoMelon</td>
-              <td>X</td>
+              <td><i className="far fa-trash-alt"></i></td>
             </tr>
           </tbody>
         </table>
