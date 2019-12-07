@@ -50,35 +50,103 @@ class Child extends React.Component {
       }
     }
     return (
-      <main role='main' id='child'>
-        <button id='exit-child-view'><i class="fas fa-chevron-circle-left"></i></button>
-        <section className='videos-display'>
-            <ul className='videos-placeholder'>
-              <li>
-                <div>
-                  <Fullscreen enabled={this.state.isFull}>
-                    <YouTube
-                      videoId="71h8MZshGSs"
-                      opts={opts}
-                      onPlay={this.toggleScreen}
-                      onPause={this.toggleScreen}
-                      onEnd={this.toggleScreen}
-                      // onError={}
-                    />
-                  </Fullscreen>
-                </div>
-              </li>
-              <li>
-                <img src={this.state.video} alt="youtube thumbnail"></img>
-              </li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-        </section>
-        <button id='refresh'>[refresh icon]</button>
-      </main>
+      <div>
+        <nav role='navigation'>
+          <button id='exit-child-view'><i class="fas fa-chevron-circle-left"></i></button>
+          <button id='refresh-child-view'><i class="fas fa-redo"></i></button>
+        </nav>
+        <main role='main' id='child'>
+          <section className='videos-display'>
+              <ul className='videos-placeholder'>
+                <li>
+                  <div>
+                    <Fullscreen enabled={this.state.isFull}>
+                      <YouTube
+                        videoId="71h8MZshGSs"
+                        opts={opts}
+                        onPlay={this.toggleScreen}
+                        onPause={this.toggleScreen}
+                        onEnd={this.toggleScreen}
+                        // onError={}
+                      />
+                    </Fullscreen>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <Fullscreen enabled={this.state.isFull}>
+                      <YouTube
+                        videoId="71h8MZshGSs"
+                        opts={opts}
+                        onPlay={this.toggleScreen}
+                        onPause={this.toggleScreen}
+                        onEnd={this.toggleScreen}
+                        // onError={}
+                      />
+                    </Fullscreen>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <Fullscreen enabled={this.state.isFull}>
+                      <YouTube
+                        videoId="71h8MZshGSs"
+                        opts={opts}
+                        onPlay={this.toggleScreen}
+                        onPause={this.toggleScreen}
+                        onEnd={this.toggleScreen}
+                        // onError={}
+                      />
+                    </Fullscreen>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <Fullscreen enabled={this.state.isFull}>
+                      <YouTube
+                        videoId="71h8MZshGSs"
+                        opts={opts}
+                        onPlay={this.toggleScreen}
+                        onPause={this.toggleScreen}
+                        onEnd={this.toggleScreen}
+                        // onError={}
+                      />
+                    </Fullscreen>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <Fullscreen enabled={this.state.isFull}>
+                      <YouTube
+                        videoId="71h8MZshGSs"
+                        opts={opts}
+                        onPlay={this.toggleScreen}
+                        onPause={this.toggleScreen}
+                        onEnd={this.toggleScreen}
+                        // onError={}
+                      />
+                    </Fullscreen>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <Fullscreen enabled={this.state.isFull}>
+                      <YouTube
+                        videoId="71h8MZshGSs"
+                        opts={opts}
+                        // onError={}
+                      />
+                    </Fullscreen>
+                  </div>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+          </section>
+        </main>
+      </div>
     );
   }
 }
