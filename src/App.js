@@ -7,6 +7,7 @@ import Register from './Register'
 import View from './View';
 import Landing from "./Landing"
 import Child from "./Child"
+import Confirm from './Confirm'
 
 class App extends Component {
   constructor(props) {
@@ -41,6 +42,10 @@ class App extends Component {
           <Child
             exact
             path={'/child'}
+          />
+          <Confirm
+            exact
+            path={'/confirm'}
           />
           <View
             exact
