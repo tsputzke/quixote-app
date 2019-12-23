@@ -45,6 +45,11 @@
 
 /* General styles (General Module) */
 
+html {
+  max-width: 500px;
+  margin: auto;
+}
+
 body {
   font-size: 20px;
   letter-spacing: .03em;
@@ -64,11 +69,17 @@ h1 {
   font-size: 1.8em;
 }
 
+a {
+  transition: 0.5s ease;
+  text-decoration: none;
+}
+
 .link-span {
   color: red;
 }
 
 .link-span:hover {
+  color: darkred;
   cursor: pointer;
 }
 
@@ -173,7 +184,7 @@ nav {
   top: 0;
   z-index: 10;
   font-size: 2em;
-  width: 100%;
+  /* width: 100%; */
   background-color: white;
   border-bottom: 1px solid black;
 }
