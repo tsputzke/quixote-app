@@ -30,7 +30,7 @@ class Landing extends Component {
               videoId="zOWJqNPeifU"
               opts={opts}
             />
-          <p>Check out the demo above to learn more!</p>
+          <p>Check out the demo to learn more!</p>
         </section>
         <section id='login'>
           <form id='login-form'>

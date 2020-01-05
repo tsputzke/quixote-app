@@ -114,11 +114,13 @@ th, td {
 
 #demo {
   margin: 15px auto;
+  width: 60%;
+  height: auto;
 }
 
 #demo p {
   text-align: center;
-  font-size: .8em;
+  font-size: .7em;
 }
 
 #login {
